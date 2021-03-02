@@ -2,6 +2,7 @@
   --fundo-principal: #131c25;
   --fundo-cabecalho: #000;
   --fonte-cabecalho: #fff;
+  --fonte-branca: #fff;
   --fonte-preta: #000;
   --tamanho-fonte-cabecalho: 12px;
   --fonte-link: #007bff;
@@ -35,4 +36,43 @@ a {
 
 input, button, textarea {
   font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+  outline: 0;
+  text-transform: uppercase;
+  padding: 0 22px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 50px;
+  margin: 0 15px;
+  position: relative;
+  color: #fff;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  background: var(--amarelo);
+  color: var(--fonte-preta);
+}
+
+.btn.btn-primary:hover {
+  background: var(--amarelo-escuro);
+}
+
+.btn.btn-primary.btn-outline {
+  background: transparent;
+  border: 1px solid var(--amarelo);
+  color: var(--fonte-branca);
+}
+
+.btn.btn-primary.btn-outline:hover {
+  color: var(--amarelo);
+}
+
+.btn.btn-cabecalho {
+  margin: 0 0.5rem;
+  padding: 0 0.5rem;
+  border-radius: 3px;
 }
