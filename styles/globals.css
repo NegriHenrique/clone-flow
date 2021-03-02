@@ -1,0 +1,38 @@
+:root {
+  --fundo-principal: #131c25;
+  --fundo-cabecalho: #000;
+  --fonte-cabecalho: #fff;
+  --fonte-preta: #000;
+  --tamanho-fonte-cabecalho: 12px;
+  --fonte-link: #007bff;
+  --amarelo: #ffb709;
+  --amarelo-escuro: #ba8b00;
+  --roxo: #9246ff;
+  --vermelho: #db0000;
+  --vermelho-claro: #dc3545;
+  --azul: #3b5998;
+  --logo-url: url('https://flowpodcast.com.br/static/media/logo-header.04fd42ac.png');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+input, button, textarea {
+  font-family: 'Montserrat', sans-serif;
+}

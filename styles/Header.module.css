@@ -1,0 +1,66 @@
+.cabecalho {
+  width: 100%;
+  background-color: var(--fundo-cabecalho);
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.cabecalho > img {
+  object-fit: contain;
+  max-height: 75px;
+  margin-right: 1rem;
+}
+
+.cabecalho > nav {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cabecalho > nav > .menumobile {
+  color: var(--amarelo);
+  font-size: 1.7rem;
+  background: transparent;
+  border: none;
+}
+
+.cabecalho > nav > .menumobile:focus, .cabecalho > nav > .menumobile:active {
+    outline: 0;
+}
+
+.containerMenuMobile {
+    background: var(--amarelo);
+    color: var(--fonte-preta);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+}
+
+.containerMenuMobile {
+    padding: 1.5rem;
+}
+
+.containerMenuMobile > li {
+    padding: 1.5rem;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+  .cabecalho > nav {
+    flex: 1;
+  }
+
+  .cabecalho > nav > .menumobile {
+    display: none;
+  }
+}
